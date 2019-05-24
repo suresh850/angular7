@@ -3,6 +3,10 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  
+  <ul>
+    <li *ngFor="let item of hero">{{ item }}</li>
+  </ul>
+  <button (click)="byClicking()">Click me!!!</button>
+{{ sample }}
 
 <router-outlet></router-outlet>

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-project';
+  sample='';
+
+  name =['suresh','sudha','dhinesh'];
+  hero = this.name;
+
+  byClicking(){
+     this.sample="how are you";
+  }
 }
